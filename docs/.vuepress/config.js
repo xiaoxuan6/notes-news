@@ -1,10 +1,13 @@
 module.exports = {
     title: 'xiaoxuan6 的随记',
     description: 'A documentation website powered by VuePress',
+    base: '/notes-news/',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
     themeConfig: {
+        lastUpdated: '最后更新时间',
+        plugins: ['@vuepress/nprogress'],
         nav: [
             {text: 'Home', link: '/'},
             {text: '博客', link: 'https://xiaoxuan6.github.io', target: '_blank'},
@@ -33,12 +36,12 @@ module.exports = {
                 title: 'docker',
                 collapsable: true,
                 children: [
-                    '/docker/docker 卸载.md',
-                    '/docker/docker 多阶构建.md',
-                    '/docker/docker 安装.md',
-                    '/docker/docker 容器无法访问外网.md',
-                    '/docker/docker-compose 安装.md',
-                    '/docker/docker-v2 安装.md',
+                    '/docker/docker卸载.md',
+                    '/docker/docker多阶构建.md',
+                    '/docker/docker安装.md',
+                    '/docker/docker容器无法访问外网.md',
+                    '/docker/docker-compose安装.md',
+                    '/docker/docker-v2安装.md',
                     '/docker/docker-compose无法访问php.md',
                 ]
             },

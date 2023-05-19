@@ -13,6 +13,7 @@
   "author": "xiaoxuan6",
   "license": "ISC",
   "devDependencies": {
+    "@vuepress/plugin-nprogress": "^1.9.9",
     "vuepress": "^1.9.9"
   }
 }
