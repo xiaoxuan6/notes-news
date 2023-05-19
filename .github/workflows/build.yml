@@ -1,0 +1,30 @@
+name: public GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: v16.17.1
+      - name: Install dependencies
+        run: npm install
+      - name: build
+        run: npm run build
+      - name: Build website
+        run: |
+          sed 's@href="/@href="/notes-news/@g' index.html
+          sed 's@src="/@src="/notes-news/@g' index.html
+        working-directory: docs/.vuepress/dist
+      - name: Deploy to Github Pages
+        uses: peaceiris/actions-gh-pages@v3.7.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/.vuepress/dist

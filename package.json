@@ -10,7 +10,7 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
-  "author": "",
+  "author": "xiaoxuan6",
   "license": "ISC",
   "devDependencies": {
     "vuepress": "^1.9.9"

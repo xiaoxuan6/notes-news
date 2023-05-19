@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Vinhson 随记',
+    title: 'xiaoxuan6 的随记',
     description: 'A documentation website powered by VuePress',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }]
@@ -55,13 +55,6 @@ module.exports = {
                 children: [
                     '/go/常见的低级错误.md'
                 ]
-            // },
-            // {
-            //     title: '随记',
-            //     collapsable: true,
-            //     children: [
-            //         '/resource/*.md'
-            //     ]
             }
         ]
     }
