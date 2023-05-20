@@ -6,8 +6,8 @@ module.exports = {
         ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
     themeConfig: {
+        logo: '/32762220.jpg',
         lastUpdated: '最后更新时间',
-        plugins: ['@vuepress/nprogress'],
         nav: [
             {text: 'Home', link: '/'},
             {text: '博客', link: 'https://xiaoxuan6.github.io', target: '_blank'},

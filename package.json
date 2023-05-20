@@ -1,7 +1,7 @@
 {
-  "name": "vuepress-starter",
+  "name": "xiaoxuan6",
   "version": "1.0.0",
-  "description": "",
+  "description": "xiaoxuan6's blog",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -13,7 +13,6 @@
   "author": "xiaoxuan6",
   "license": "ISC",
   "devDependencies": {
-    "@vuepress/plugin-nprogress": "^1.9.9",
     "vuepress": "^1.9.9"
   }
 }
