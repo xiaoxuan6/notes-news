@@ -29,7 +29,8 @@ module.exports = {
                     '/linux/常用命令.md',
                     '/linux/ipconfig.md',
                     '/linux/oh_my_zsh.md',
-                    '/linux/从window访问wsl地址.md'
+                    '/linux/从window访问wsl地址.md',
+                    '/linux/Linux常用命令之xargs.md'
                 ]
             },
             {
