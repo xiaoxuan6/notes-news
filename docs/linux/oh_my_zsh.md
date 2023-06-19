@@ -6,41 +6,62 @@ title: Oh My Zsh
 
 Zsh 是一款强大的虚拟终端，既是一个系统的虚拟终端，也可以作为一个脚本语言的交互解析器。
 
-```bash
-# 打开终端，在终端上输入: 
-zsh --version
+### 打开终端，在终端上输入:
 
-# 这个命令来查看我们的电脑上是否安装了 Zsh 
+```bash 
+zsh --version
+```
+
+如果没有安装 `zsh`, 通过如下命令安装
+
+```bash
+apt install zsh
 ```
 
 ## 安装 Oh My Zsh 方法
- 
-可以通过 curl 或 wget 两种方式来安装，用一条命令即可安装。
 
-### curl 安装
+```bash
+# via wget
+wget https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh && chmod 777 install.sh && ./install.sh
 
-GitHub:
-```bazaar
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+然后执行 install.sh 如果发现很慢，可以修改为gitee：
+vim install.sh
+
+REPO=${REPO:-ohmyzsh/ohmyzsh}
+REMOTE=${REMOTE:-https://github.com/${REPO}.git}
+两行改为：
+REPO=${REPO:-mirrors/oh-my-zsh}
+REMOTE=${REMOTE:-https://gitee.com/${REPO}.git}
+
+修改之后重新执行 install.sh
 ```
 
-Gitee ( 国内镜像 )
-```bazaar
-sh -c "$(curl -fsSL https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh)"
+## 安装插件
+
+安装过程中如果安装失败，使用 `https://ghproxy.com/` 加速 `github` 链接地址
+
+### 语法高亮插件 zsh-syntax-highlighting
+
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 ```
 
-### wget 安装
+### 自动补全插件 zsh-autosuggestions
 
-GitHub:
-```bazaar
-sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
-Gitee ( 国内镜像 )
-```bazaar
-sh -c "$(wget -O- https://gitee.com/pocmon/mirrors/raw/master/tools/install.sh)"
-```
+安装完后启用插件 
 
+```bash
+# 编辑~/.zshrc   
+vim ~/.zshrc    
+# 在plugins后括号里添加安装的插件名字
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+# 最后刷新
+source ~/.zshrc
+```
 ## 设置主题
 
 ### 设置固定主题
@@ -49,7 +70,6 @@ sh -c "$(wget -O- https://gitee.com/pocmon/mirrors/raw/master/tools/install.sh)"
 ```bazaar
 vim ~/.zshrc
 
-# 找到 ZSH_THEME
 # robbyrussell 是默认的主题
 ZSH_THEME="robbyrussell"
 
@@ -105,3 +125,8 @@ Oh My Zsh 的自动更新提示误触关掉了解决办法
 ```bazaar
 upgrade_oh_my_zsh
 ```
+
+## 参考链接
+
+> https://www.cnblogs.com/misfit/p/15659565.html
+> https://zhuanlan.zhihu.com/p/35283688
