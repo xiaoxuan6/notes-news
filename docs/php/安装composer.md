@@ -11,7 +11,7 @@ curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer11
 ```
 
-> 参考地址：https://docs.phpcomposer.com/00-intro.html#Globally
+> 参考地址：[https://docs.phpcomposer.com/00-intro.html#Globally](https://docs.phpcomposer.com/00-intro.html#Globally)
 
 ### win
 

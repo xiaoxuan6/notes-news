@@ -1,5 +1,5 @@
 ---
-title: ubuntu - zsh command not found ifconfig
+title: not found ifconfig
 ---
 
 ## 问题描述
