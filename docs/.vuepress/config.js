@@ -59,6 +59,13 @@ module.exports = {
                 children: [
                     '/go/常见的低级错误.md'
                 ]
+            },
+            {
+                title: 'PHP',
+                collapsable: true,
+                children: [
+                    '/php/安装composer.md'
+                ]
             }
         ]
     }
