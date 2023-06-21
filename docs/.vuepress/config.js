@@ -66,6 +66,13 @@ module.exports = {
                 children: [
                     '/php/安装composer.md'
                 ]
+            },
+            {
+                title: '杂项',
+                collapsable: true,
+                children: [
+                    '/杂项/WSL安装和卸载.md'
+                ]
             }
         ]
     }
