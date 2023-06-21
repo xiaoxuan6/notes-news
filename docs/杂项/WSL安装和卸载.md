@@ -33,6 +33,10 @@ wsl --intall
 
 输入新用户名/密码
 
+> 注意：使用 docker 会报错 `Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json?all=1": dial unix /var/run/docker.sock: connect: permission denied` 没有权限
+> 
+> 解决：设置 root 用户 `sudo passwd root`, 然后切换到 root `su root`
+
 ## 卸载 Ubuntu
 
 #### 查看安装的系统
@@ -54,3 +58,4 @@ wsl --list
 ```
 
 > 相关：[安装 oh my zsh](/linux/oh_my_zsh.md)
+> 相关链接：[Win+Linux单系统解决方案——WSL（入门篇）](https://www.jianshu.com/p/6b02948b3d37)
