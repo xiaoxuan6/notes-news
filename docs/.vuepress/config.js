@@ -68,6 +68,13 @@ module.exports = {
                 ]
             },
             {
+                title: 'Git',
+                collapsable: true,
+                children: [
+                    '/git/git设置Verified.md'
+                ]
+            },
+            {
                 title: '杂项',
                 collapsable: true,
                 children: [

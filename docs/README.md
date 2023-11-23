@@ -1,4 +1,4 @@
-# Hello VuePress
+# 笔记
 
 ::: tip
 这是一个提示

@@ -58,4 +58,5 @@ wsl --list
 ```
 
 > 相关：[安装 oh my zsh](/linux/oh_my_zsh.md)
+> 
 > 相关链接：[Win+Linux单系统解决方案——WSL（入门篇）](https://www.jianshu.com/p/6b02948b3d37)
