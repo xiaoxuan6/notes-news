@@ -10,7 +10,7 @@ module.exports = {
         lastUpdated: '最后更新时间',
         nav: [
             {text: 'Home', link: '/'},
-            {text: '博客', link: 'https://xiaoxuan6.github.io', target: '_blank'},
+            {text: '博客', link: 'https://xiaoxuan6.vercel.app', target: '_blank'},
             {
                 text: '开源项目', items: [
                     {text: 'ChatGPT', link: 'https://xiaoxuan6.github.io/chatgpt-server', target: '_blank'},
