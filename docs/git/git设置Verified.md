@@ -46,6 +46,8 @@ git config --global user.signingkey 24CD550268849CA0
 git config --global commit.gpgsign true
 ```
 
+> 这里仅验证 `commit`，不验证 `tag`，所以不需要 `git config --global tag.gpgsign true`。
+
 ## 4、告诉 GitHub 自己的 GPG 公钥
 
 最后，我们需要告诉 GitHub 我们使用的 GPG 公钥。对于刚刚我们拿到的私钥 ID：`24CD550268849CA0`，我们使用下面的命令即可导出我们的 GPG 公钥：
