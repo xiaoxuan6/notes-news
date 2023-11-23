@@ -26,8 +26,8 @@ max-cache-ttl 3600
 
 这些行设置了 `GPG` 代理的缓存超时时间。这里的时间是以秒为单位，可以根据需要进行调整。
 
-## 4、重启 `gpg-agent`
+## 4、重新加载 `gpg-agent` 配置`
 
 ```
-gpg-agent --daemon
+gpg-connect-agent reloadagent /bye
 ```
