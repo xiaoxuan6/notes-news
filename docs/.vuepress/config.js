@@ -71,7 +71,8 @@ module.exports = {
                 title: 'Git',
                 collapsable: true,
                 children: [
-                    '/git/git设置Verified.md'
+                    '/git/git设置Verified.md',
+                    '/git/git提交commit使用gpg-agent每天只需要一次输入密码.md',
                 ]
             },
             {
