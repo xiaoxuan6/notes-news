@@ -3,7 +3,7 @@ module.exports = {
     description: 'A documentation website powered by VuePress',
     base: '/notes-news/',
     head: [
-        ['link', { rel: 'icon', href: '/favicon.ico' }]
+        ['link', {rel: 'icon', href: '/favicon.ico'}]
     ],
     themeConfig: {
         logo: '/32762220.jpg',
@@ -30,7 +30,8 @@ module.exports = {
                     '/linux/ipconfig.md',
                     '/linux/oh_my_zsh.md',
                     '/linux/从window访问wsl地址.md',
-                    '/linux/Linux常用命令之xargs.md'
+                    '/linux/Linux常用命令之xargs.md',
+                    '/linux/sub_filter.md',
                 ]
             },
             {
