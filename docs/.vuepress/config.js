@@ -7,7 +7,19 @@ module.exports = {
     ],
     themeConfig: {
         logo: '/32762220.jpg',
-        lastUpdated: '最后更新时间',
+        lastUpdated: (timestamp, lang) => {
+            // timestamp 是最后更新时间的时间戳
+            const lastUpdatedDate = new Date(timestamp);
+
+            // 减去8个小时的毫秒数
+            const offsetMilliseconds = 8 * 60 * 60 * 1000;
+
+            // 计算调整后的时间
+            const adjustedDate = new Date(lastUpdatedDate.getTime() + offsetMilliseconds);
+
+            // 返回格式化后的时间字符串
+            return adjustedDate.toLocaleString(lang, { timeStyle: 'medium', dateStyle: 'medium' });
+        },
         nav: [
             {text: 'Home', link: '/'},
             {text: '博客', link: 'https://xiaoxuan6.vercel.app', target: '_blank'},
