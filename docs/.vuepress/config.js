@@ -5,6 +5,9 @@ module.exports = {
     head: [
         ['link', {rel: 'icon', href: '/favicon.ico'}]
     ],
+    plugins: [
+        ['vuepress-plugin-code-copy', true]
+    ],
     themeConfig: {
         logo: '/32762220.jpg',
         lastUpdated: '最后更新时间',
