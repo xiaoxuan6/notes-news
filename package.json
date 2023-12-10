@@ -1,17 +1,14 @@
 {
-  "name": "xiaoxuan6",
+  "name": "notes",
   "version": "1.0.0",
+  "author": "xiaoxuan6",
   "description": "xiaoxuan6's blog",
   "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
-  "author": "xiaoxuan6",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "vuepress": "^1.9.9"
   }

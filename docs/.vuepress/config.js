@@ -1,6 +1,6 @@
 module.exports = {
     title: 'xiaoxuan6 的随记',
-    description: 'A documentation website powered by VuePress',
+    description: '笔记文档',
     base: '/notes-news/',
     head: [
         ['link', {rel: 'icon', href: '/favicon.ico'}]
@@ -8,8 +8,18 @@ module.exports = {
     themeConfig: {
         logo: '/32762220.jpg',
         lastUpdated: '最后更新时间',
+        // 默认为 false，设置为 true 来启用
+        editLinks: true,
+        // 自定义编辑链接的文本。默认是 "Edit this page"
+        editLinkText: '帮助改进页面内容!',
         nav: [
             {text: 'Home', link: '/'},
+            {text: 'Git', link: '/git/'},
+            {text: 'Linux', link: '/linux/'},
+            {text: 'Docker', link: '/docker/'},
+            {text: 'Go', link: '/go/'},
+            {text: 'PHP', link: '/php/'},
+            {text: '杂项', link: '/other/'},
             {text: '博客', link: 'https://xiaoxuan6.vercel.app', target: '_blank'},
             {
                 text: '开源项目', items: [
@@ -20,70 +30,39 @@ module.exports = {
             },
             {text: 'Github', link: 'https://github.com/xiaoxuan6', target: '_blank'},
         ],
-        sidebar: [
-            {
-                title: 'linux',
-                collapsable: true, // 如果 collapsable 属性设置为 true，则表示这个章节可以被展开或者折叠。如果设置为 false，则表示这个章节将一直保持打开状态。
-                children: [
-                    '/linux/grep.md',
-                    '/linux/常用命令.md',
-                    '/linux/ipconfig.md',
-                    '/linux/oh_my_zsh.md',
-                    '/linux/从window访问wsl地址.md',
-                    '/linux/Linux常用命令之xargs.md',
-                    '/linux/sub_filter.md',
-                ]
-            },
-            {
-                title: 'docker',
-                collapsable: true,
-                children: [
-                    '/docker/docker卸载.md',
-                    '/docker/docker多阶构建.md',
-                    '/docker/docker安装.md',
-                    '/docker/docker容器无法访问外网.md',
-                    '/docker/docker-compose安装.md',
-                    '/docker/docker-v2安装.md',
-                    '/docker/docker-compose无法访问php.md',
-                ]
-            },
-            {
-                title: '面试题',
-                collapsable: true,
-                children: [
-                    '/interview/inter.md'
-                ]
-            },
-            {
-                title: 'Go',
-                collapsable: true,
-                children: [
-                    '/go/常见的低级错误.md'
-                ]
-            },
-            {
-                title: 'PHP',
-                collapsable: true,
-                children: [
-                    '/php/安装composer.md'
-                ]
-            },
-            {
-                title: 'Git',
-                collapsable: true,
-                children: [
-                    '/git/git设置Verified.md',
-                    '/git/git提交commit使用gpg-agent每天只需要一次输入密码.md',
-                    '/git/includeif.md',
-                ]
-            },
-            {
-                title: '杂项',
-                collapsable: true,
-                children: [
-                    '/杂项/WSL安装和卸载.md'
-                ]
-            }
-        ]
+        sidebar: {
+            '/git/': [
+                'git设置Verified',
+                'git提交commit使用gpg-agent每天只需要一次输入密码',
+                'includeif',
+            ],
+            '/docker/': [
+                'docker卸载',
+                'docker多阶构建',
+                'docker安装',
+                'docker容器无法访问外网',
+                'docker-compose安装',
+                'docker-v2安装',
+                'docker-compose无法访问php',
+            ],
+            '/linux/': [
+                'grep',
+                '常用命令',
+                'ipconfig',
+                'oh_my_zsh',
+                '从window访问wsl地址',
+                'Linux常用命令之xargs',
+                'sub_filter',
+            ],
+            '/go/': [
+                '常见的低级错误'
+            ],
+            '/php/': [
+                '安装composer'
+            ],
+            '/other/': [
+                'WSL安装和卸载'
+            ]
+        }
     }
 }
