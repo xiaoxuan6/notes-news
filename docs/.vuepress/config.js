@@ -19,6 +19,7 @@ module.exports = {
             {text: 'Docker', link: '/docker/'},
             {text: 'Go', link: '/go/'},
             {text: 'PHP', link: '/php/'},
+            {text: '前端', link: '/js/'},
             {text: '杂项', link: '/other/'},
             {text: '博客', link: 'https://xiaoxuan6.vercel.app', target: '_blank'},
             {
@@ -59,6 +60,11 @@ module.exports = {
             ],
             '/php/': [
                 '安装composer'
+            ],
+            '/js/': [
+                'nprogress',
+                'notiflix',
+                'axios'
             ],
             '/other/': [
                 'WSL安装和卸载'
