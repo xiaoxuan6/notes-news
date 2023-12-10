@@ -6,7 +6,8 @@ module.exports = {
         ['link', {rel: 'icon', href: '/favicon.ico'}]
     ],
     plugins: [
-        ['vuepress-plugin-code-copy', true]
+        ['vuepress-plugin-code-copy', true],
+        '@vuepress-reco/extract-code'
     ],
     themeConfig: {
         logo: '/32762220.jpg',
