@@ -40,6 +40,7 @@ module.exports = {
                 'git设置Verified',
                 'git提交commit使用gpg-agent每天只需要一次输入密码',
                 'includeif',
+                'submodule'
             ],
             '/docker/': [
                 'docker卸载',
