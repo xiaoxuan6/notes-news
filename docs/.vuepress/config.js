@@ -60,6 +60,7 @@ module.exports = {
                 '从window访问wsl地址',
                 'Linux常用命令之xargs',
                 'sub_filter',
+                'jq'
             ],
             '/go/': [
                 '常见的低级错误'

@@ -1,1 +1,4 @@
-# Linux
+---
+title: Linux
+sidebar: false
+---
