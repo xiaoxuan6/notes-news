@@ -134,3 +134,14 @@ awk 'NR==5,NR==6{print $0}' a.txt
 ```bash
 awk '{print $1,$(NF-1)}' a.txt
 ```
+
+### 提取包含 xxx 的行
+
+```bash
+awk '/xxx/'
+```
+
+示例：提取包含 browser_download_url 的行的第二个字段
+```bash
+curl -s https://api.github.com/repos/variadico/noti/releases/latest | awk '/browser_download_url/ { print $2 }' 
+```
