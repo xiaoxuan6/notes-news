@@ -77,7 +77,8 @@ module.exports = {
             '/other/': [
                 'WSL安装和卸载',
                 '常见面试题',
-                'huggingface.md'
+                'huggingface.md',
+                'uskg.md'
             ]
         }
     }
